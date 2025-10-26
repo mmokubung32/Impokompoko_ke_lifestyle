@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? family=Poppins&display=swap");
 
 *{
-    /*must remove when done*/
-    /*border: 1px dotted black;*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -133,4 +131,51 @@ nav ul li a{
     padding: 5px;
     font-size: 16px;
     border-radius: 1.6px;
+}
+
+.products{
+    margin: 50px;
+    text-align: center;
+}
+
+.products h2{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #e6a902;
+}
+
+.products .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 75px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.products .row img{
+    height: 300px;
+    width: 250px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    
+}
+
+.products .product{
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.product .row .product h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.products .row .product p{
+    font-size: 16px;
+}
+
+.rating i{
+    color: #fbc531;
 }
