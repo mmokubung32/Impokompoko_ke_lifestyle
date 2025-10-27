@@ -211,3 +211,59 @@ nav ul li a{
     letter-spacing: 2px;
     margin-bottom: 7px;
 }
+
+.reviews{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.reviews h2{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #e6a902;
+}
+
+.reviews .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 75px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.reviews .review{
+    flex-basis: 30%;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.reviews .review i.fa-quote-left{
+    color: #fbc531;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.reviews .review img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.reviews .review p{
+    font-size: 14px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.reviews .review h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 18px;
+    margin-top: 12px;
+}
