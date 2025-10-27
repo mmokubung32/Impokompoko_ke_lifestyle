@@ -179,3 +179,35 @@ nav ul li a{
 .rating i{
     color: #fbc531;
 }
+
+.offer{
+    margin: 70px 0;
+    padding: 30px 0;
+    background: radial-gradient(#fff, #74b9ff);
+}
+
+.offer .offer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.offer .offer-container .offer-image img{
+    height: 300px;
+    width: 350px;
+}
+
+.offer .offer-container .offer-details{
+    flex-basis: 50%;
+}
+
+.offer .offer-container .offer-details p{
+    font-size: 17px;
+}
+
+.offer .offer-container .offer-details h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
