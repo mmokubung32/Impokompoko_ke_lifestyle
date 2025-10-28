@@ -40,6 +40,51 @@ nav ul li a{
     color: black;
 }
 
+.navbar .menu-icon{
+    display: none;
+    width: 28px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul{
+        display: none;
+    }
+    .navbar .menu-icon{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .column{
+        margin: 25px;
+    }
+    .column h1{
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+    .column img{
+        height: 250px;
+        width: 350px;
+        object-fit: cover;
+    }
+    .button{
+        margin-top: 30px;
+    }
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #e6a902;
+}
+
 .header{
     background: radial-gradient(#fff,#74b9ff);
     margin: auto;
@@ -133,6 +178,16 @@ nav ul li a{
     border-radius: 1.6px;
 }
 
+@media only screen and (max-width: 768px){
+    .categories .row{
+        flex-direction: column;
+    }
+    .categories .row p{
+        margin-bottom: 40px;
+    }
+
+}
+
 .products{
     margin: 50px;
     text-align: center;
@@ -176,6 +231,17 @@ nav ul li a{
     font-size: 16px;
 }
 
+.products .product {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.products .product:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
 .rating i{
     color: #fbc531;
 }
@@ -210,6 +276,25 @@ nav ul li a{
     font-size: 35px;
     letter-spacing: 2px;
     margin-bottom: 7px;
+}
+
+@media only screen and (max-width: 768px){
+    .offer .offer-container{
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 35px;
+        margin-right:25px;
+    }
+    .offern .offer-containerm.offer-image img{
+        margin-bottom: 60px;
+    }
+
+    .offer .offer-container #offer-button{
+        display: block;
+        width: 175px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
 }
 
 .reviews{
@@ -268,6 +353,20 @@ nav ul li a{
     margin-top: 12px;
 }
 
+@media only screen and (max-width: 768px){
+    .reviews .row{
+        flex-direction: column;
+        margin: 0 40px;
+    }
+    .reviews .review{
+        margin-bottom: 50px;
+    }
+}
+
+.reviews .review:hover {
+    box-shadow: none;
+}
+
 .footer{
     display: flex;
     width: 100%;
@@ -320,4 +419,14 @@ nav ul li a{
     text-align: center;
     margin: 10px;
     color: #555
+}
+
+@media only screen and (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+        padding: 10px 25px;
+    }
+    .footer p{
+        font-size: 18px;
+    }
 }
